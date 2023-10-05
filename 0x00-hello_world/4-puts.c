@@ -1,5 +1,8 @@
 #include <stdio.h>
-/* using puts to print out */
+/**
+ * using puts to print out
+ * main - Entry point of the program
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
