@@ -6,17 +6,13 @@
  */
 int main(void)
 {
-int num1, num2;
-for (num1 = 0; num1 <= 99; num1++)
+int number1, number2;
+for (number1 = 0; number1 <= 99; number1++)
 {
-for (num2 = num1; num2 <= 99; num2++)
+for (number2 = number1; number2 <= 99; number2++)
 {
-putchar((num1 / 10) + '0');
-putchar((num1 % 10) + '0');
-putchar(' ');
-putchar((num2 / 10) + '0');
-putchar((num2 % 10) + '0');
-if (num1 < 99 || num2 < 99)
+printf("%02d %02d", number1, number2);
+if (number1 < 99 || number2 < 99)
 {
 putchar(',');
 putchar(' ');
