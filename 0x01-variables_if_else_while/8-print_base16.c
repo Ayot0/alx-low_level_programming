@@ -16,5 +16,5 @@ for (hexDigit = 'a'; hexDigit <= 'f'; hexDigit++)
 putchar(hexDigit);
 }
 putchar('\n');
-return 0;
+return (0);
 }
