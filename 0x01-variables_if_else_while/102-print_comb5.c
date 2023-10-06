@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - entry point
  *
@@ -6,18 +7,41 @@
  */
 int main(void)
 {
-int number1, number2;
-for (number1 = 0; number1 <= 99; number1++)
+int i, e, g, h, op1, op2;
+
+i = e = g = h = 48;
+while (h < 58)
 {
-for (number2 = number1; number2 <= 99; number2++)
-{
-printf("%02d %02d", number1, number2);
-if (number1 < 99 || number2 < 99)
-{
-putchar(',');
-putchar(' ');
-}
-}
+	g = 48;
+	while (g < 58)
+	{
+		e = 48;
+		while (e < 58)
+		{
+			i = 48;
+			while (i < 58)
+			{
+				op1 = (h * 10) + g;
+				op2 = (e * 10) + i;
+				if (op1 < op2)
+				{
+					putchar(h);
+					putchar(g);
+					putchar(' ');
+					putchar(e);
+					putchar(i);
+					if (h == 57 && g == 56 && e == 57 && i == 57)
+						break;
+					putchar(',');
+					putchar(' ');
+				}
+				i++;
+			}
+			e++;
+		}
+		g++;
+	}
+	h++;
 }
 putchar('\n');
 return (0);
