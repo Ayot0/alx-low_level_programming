@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point 
+ * main - entry point
  *
  * Return: program execution
  */
@@ -13,5 +13,5 @@ putchar(number + '0');
 number++;
 }
 putchar('\n');
-return 0;
+return (0);
 }
